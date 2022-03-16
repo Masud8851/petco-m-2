@@ -75,6 +75,7 @@ img{
 }
 
 
+
 /* ---------------------------------------------- */
 /* ------------  Hero Container End  ----------- */
 /* ---------------------------------------------- */
@@ -103,7 +104,8 @@ main{
 }
 
 .card{
-    padding: 2%;
+    
+    padding: 0 20px;
 }
 
 .card-img-top img{
@@ -138,11 +140,7 @@ main{
     align-items: center;
 }
 
-/* .care-and-groom{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-} */
+
 .prep-to-eat, .all-prep{
     flex: 50%;
     padding: 2%;
@@ -150,6 +148,7 @@ main{
 }
 
 .all-prep-left, .all-prep-right{
+    max-width: 100%;
     flex: 50%;
     margin: 3% 2%;
     /* padding: 0 5%; */
@@ -326,13 +325,20 @@ footer{
         order: 1;
     }
 
+    .cards-group{
+        max-width: 100%;
+        overflow: hidden;
+        /* display: none; */
+        padding: 2%;
+    }
+
     .cards{
-        flex-direction: column;
-        /* overflow-x: scroll; */
+        /* flex-direction: column; */
+        overflow-x: scroll;
     }
 
     .card{
-        margin: 2%;
+        width: 199px;
     }
     
 
