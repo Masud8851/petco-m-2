@@ -356,6 +356,10 @@ footer{
     #footer-mobile{
         display: block;
     }
+    .main-image img{
+        position: relative;
+        top: -5px;
+    }
 
 }
 
