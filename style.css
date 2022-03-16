@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
+a{
+    color: black;
+}
+
 #mobile-nav{
     display: none;
 }
@@ -31,6 +39,7 @@ img{
 .carousel .carousel_item, 
 .carousel .carousel_item--hidden{
     display: none;
+    position: relative;
 }
 
 .carousel .carousel_item img{
@@ -45,21 +54,21 @@ img{
 
 .carousel .carousel_actions {
     width: 100%;
-    text-align: center;
-    
-    margin-top: -50px;
+    text-align: center; 
+    margin-top: -40px;
+    /* background-color: rgb(196, 22, 22); */
+    position: absolute;
+    z-index: 999;
 }
 
 .carousel .carousel_actions button{
     border-radius: 50px;
     border: 0;
     font-weight: bold;
-    /* padding: 10px; */
     cursor: pointer;
-    width: 15px;
-    height: 15px;
-    /* margin: 0 20px; */
-    background-color: rgb(175, 175, 241);
+    width: 10px;
+    height: 10px;
+    margin: 1px;
 }
 
 .carousel .carousel_actions button#carousel_button--prev {
@@ -84,8 +93,7 @@ img{
     flex-direction: row;
     align-items: center; 
     background-color: #A6549C;
-    position: relative;
-    top: -5px;
+    
 }
 
 .left-hero-container{
@@ -153,16 +161,18 @@ main{
     margin: 4% 0;
 }
 
+
+
 .cards{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 1% 2%;
+    overflow-x: hidden;
 }
 
-.card{
-    
-    padding: 0 20px;
+.card{    
+    padding: 20px;
 }
 
 .card-img-top img{
@@ -350,6 +360,17 @@ footer{
         flex-direction: column;
     }
 
+
+    .carousel .carousel_actions button{
+        width: 5px;
+        height: 5px;
+    }
+    .carousel .carousel_actions {
+         
+        margin-top: -20px;
+        
+    }
+
     .left-hero-container{
         order: 2;
         padding-left: 0;
@@ -371,6 +392,11 @@ footer{
 
     .rightt-hero-container{
         order: 1;
+    }
+
+    .right-hero-container img{
+        position: relative;
+        left: -5px;
     }
 
    
@@ -480,5 +506,7 @@ footer{
         margin: 0 10%;
         flex-direction: column;
     }
+
+   
 
 }
