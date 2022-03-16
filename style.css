@@ -191,6 +191,7 @@ hr{
     width: 85px;
     height: 217px;
 } */
+
 .cat-groom{
     padding: 2%;
 }
@@ -361,6 +362,10 @@ footer{
     .main-image img{
         position: relative;
         top: -5px;
+    }
+    .mobile-banner-head img{
+        position: relative;
+        
     }
 
 }
