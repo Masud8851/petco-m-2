@@ -68,23 +68,24 @@ img{
 }
 
 main{
-    margin: 5% 5%;
+    margin: 2% 5%;
 }
 
 .easy-steps-container{
     text-align: center;
+    margin: 4% 0;
 }
 
 .cards{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 2%;
+    margin: 1% 2%;
 }
 
-/* .card{
+.card{
     padding: 2%;
-} */
+}
 
 .card-img-top img{
     border: 1px solid gray;
@@ -128,6 +129,7 @@ main{
 
 .all-prep-left, .all-prep-right{
     flex: 50%;
+    margin: 3% 2%;
     /* padding: 0 5%; */
 }
 
